@@ -165,31 +165,34 @@
         </style>
 
     </head>
-    <body class="fondo">
+    <body class="fondo" background="https://content.emarket.pe/common/collections/standard/e8/e4/e8e4ab5f-b14a-43be-a879-d692d3883121.jpg">
+        
     <div class="centered-title">
         <h1><strong><?php echo "Turismo Huánuco"; ?></h1></strong>
     </div>
     <nav class="nav">
-    <div class="container">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/acerca">Acerca de</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/servicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contacto">Contacto</a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="alojamiento.blade.php" href="/acerca">Alojamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/inicio-sesion">Iniciar Sesión</a>
+                    </li> <!-- Agrega este elemento para el botón de inicio de sesión -->
+                </ul>
+            </div>
         </div>
-    </div>
-    
-</nav>
+    </nav>
     <div class="card">
     <div class="perros">
         <img src="https://cdn.www.gob.pe/uploads/document/file/3105805/standard_OPERATIVO%20%282%29.JPG.JPG" alt="...">
