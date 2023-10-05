@@ -18,7 +18,7 @@
             text-align: center;
             color: green;
             font-size: 50px;
-            text-align: center;
+        
             font-family: 'Garamond', sans-serif;
             background-color: #333;
         }
@@ -50,49 +50,56 @@
 
         .card {
     border: 1px #ccc;
+    margin: 40px 160px 40px 0;
+    padding: 20px;
+    max-width: 500px;
+    max-height: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: seashell;
+    float: right;
+    display: inline;
+    
+    
+}
+.card1 {
+    border: 1px #ccc;
+    margin: 40px 40px 40px 0;
+    padding: 20px;
+    max-width: 500px;
+    max-height: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: seashell;
+    float: right;
+    display: inline;
+    
+}
+.card2 {
+    border: 1px #ccc;
     margin: 40px;
     padding: 20px;
     max-width: 500px;
-    max-height: 500px;
+    max-height: 800px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: seashell;
+    float: right;
+    display: inline;
     
 }
 
-.card-img-top {
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-
+.perros{
+   height: 270px;
+   overflow: hidden;
+   border-radius: 10px; 
 }
-.superposicion {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Color de superposición con opacidad */
-            opacity: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: opacity 0.3s ease; /* Transición suave de la opacidad */
-        }
+.perros img{
+    object-fit: cover;
+    transition: transform 2s;
+    height: 100%;
+}
+.perros:hover img{
+    transform: scale(1.5);
+}
 
-        .contenedor:hover .imagen {
-            transform: scale(1.1); /* Hace que la imagen se agrande al pasar el mouse por encima */
-        }
-
-        .contenedor:hover .superposicion {
-            opacity: 1; /* Muestra la superposición al pasar el mouse por encima */
-        }
-
-.imagen {
-            width: 100%;
-            height: 100%;
-            transition: transform 0.3s ease; /* Transición suave para el efecto de superposición */
-        }
 
 .card-title {
     font-size: 1.25rem;
@@ -183,14 +190,38 @@
     </div>
     
 </nav>
-        <div class="card">
-  <img src="https://www.ipe.org.pe/portal/wp-content/uploads/2020/07/Huanuco_economia.jpg" class="card-img-top" alt="...">
+    <div class="card">
+    <div class="perros">
+        <img src="https://cdn.www.gob.pe/uploads/document/file/3105805/standard_OPERATIVO%20%282%29.JPG.JPG" alt="...">
+    </div>
+    <div class="card-body"><br>
+        <h5 class="card-title">Transportes</h5>
+        <p class="card-text">El departamento de Huánuco se encuentra ubicado en la parte centro oriental del país, abarcando una superficie de 37 266 km2, que representa el 2,9 por ciento del territorio nacional. Cuenta con dos regiones naturales, la sierra con 22 150 km2 y la zona ceja de selva y selva, con 15 116 km2.</p><br>
+        <a href="#" class="btn btn-primary">Ver más</a>
 
-  <div class="card-body">
-    <h5 class="card-title">Sobre Huánuco</h5>
-    <p class="card-text">El departamento de Huánuco se encuentra ubicado en la parte centro oriental del país, abarcando una superficie de 37 266 km2, que representa el 2,9 por ciento del territorio nacional. Cuenta con dos regiones naturales, la sierra con 22 150 km2 y la zona ceja de selva y selva, con 15 116 km2.</p><br>
-    <a href="#" class="btn btn-primary">Ver más</a>
-  </div>
-</div>
+    </div>
+    </div>
+    <div class="card1">
+    <div class="perros">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv8FGw8lb8m8R2OR8hra0jwG5YTc-poxy2rQ&usqp=CAU" alt="...">
+    </div>
+    <div class="card-body"><br>
+        <h5 class="card-title">Lugares Turisticos</h5>
+        <p class="card-text">Estos son solo algunos de los lugares turísticos destacados en Huánuco. La región ofrece una gran diversidad de experiencias para los amantes de la naturaleza, la historia y la cultura. <br><br><br></p><br>
+        <a href="#" class="btn btn-primary">Ver más</a>
+
+    </div>
+    </div>
+    <div class="card2">
+    <div class="perros">
+        <img src="https://www.ipe.org.pe/portal/wp-content/uploads/2020/07/Huanuco_economia.jpg" alt="...">
+    </div>
+    <div class="card-body"><br>
+        <h5 class="card-title">Sobre Huánuco</h5>
+        <p class="card-text">El departamento de Huánuco se encuentra ubicado en la parte centro oriental del país, abarcando una superficie de 37 266 km2, que representa el 2,9 por ciento del territorio nacional. Cuenta con dos regiones naturales, la sierra con 22 150 km2 y la zona ceja de selva y selva, con 15 116 km2.</p><br>
+        <a href="#" class="btn btn-primary">Ver más</a>
+
+    </div>
+    </div>
     </body>
 </html>
