@@ -49,18 +49,50 @@
         }
 
         .card {
-    border: 1px solid #ccc;
+    border: 1px #ccc;
     margin: 40px;
     padding: 20px;
-    max-width: 400px;
+    max-width: 500px;
+    max-height: 500px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: seashell;
+    
 }
 
 .card-img-top {
     max-width: 100%;
     height: auto;
+    overflow: hidden;
+    position: relative;
+
 }
+.superposicion {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Color de superposición con opacidad */
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+        }
+
+        .contenedor:hover .imagen {
+            transform: scale(1.1); /* Hace que la imagen se agrande al pasar el mouse por encima */
+        }
+
+        .contenedor:hover .superposicion {
+            opacity: 1; /* Muestra la superposición al pasar el mouse por encima */
+        }
+
+.imagen {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease; /* Transición suave para el efecto de superposición */
+        }
 
 .card-title {
     font-size: 1.25rem;
@@ -72,15 +104,19 @@
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: green;
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: yellowgreen
 }
 
 /* Estilo personalizado para los marcadores de posición */
@@ -151,26 +187,9 @@
   <img src="https://www.ipe.org.pe/portal/wp-content/uploads/2020/07/Huanuco_economia.jpg" class="card-img-top" alt="...">
 
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<div class="card" aria-hidden="true">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title placeholder-glow">
-      <span class="placeholder col-6"></span>
-    </h5>
-    <p class="card-text placeholder-glow">
-      <span class="placeholder col-7"></span>
-      <span class="placeholder col-4"></span>
-      <span class="placeholder col-4"></span>
-      <span class="placeholder col-6"></span>
-      <span class="placeholder col-8"></span>
-    </p>
-    <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+    <h5 class="card-title">Sobre Huánuco</h5>
+    <p class="card-text">El departamento de Huánuco se encuentra ubicado en la parte centro oriental del país, abarcando una superficie de 37 266 km2, que representa el 2,9 por ciento del territorio nacional. Cuenta con dos regiones naturales, la sierra con 22 150 km2 y la zona ceja de selva y selva, con 15 116 km2.</p><br>
+    <a href="#" class="btn btn-primary">Ver más</a>
   </div>
 </div>
     </body>
