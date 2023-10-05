@@ -45,8 +45,80 @@
         }
 
         nav a:hover {
-            color: #ff9900; /* Color del texto cuando el mouse pasa por encima */
+            color: #ff9900;
         }
+
+        .card {
+    border: 1px solid #ccc;
+    margin: 40px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: seashell;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo personalizado para los marcadores de posición */
+.placeholder-glow {
+    background-color: #f7f7f7;
+    animation: glow 2s infinite alternate;
+}
+
+.placeholder {
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 5px;
+    animation: placeholder-blink 1s infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes placeholder-blink {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
         </style>
 
     </head>
@@ -54,28 +126,52 @@
     <div class="centered-title">
         <h1><strong><?php echo "Turismo Huánuco"; ?></h1></strong>
     </div>
-    <nav>
-            <ul>
-                <?php
-                // Arreglo de elementos de navegación
-                $navItems = [
-                    'Inicio' => 'index.php',
-                    'Alojamientos' => 'acerca.php',
-                    'Vuelos' => 'servicios.php',
-                    'Paquetes' => 'contacto.php',
-                    'Ofertas' => 'ga.php',
-                    'Rentas' => 'acerca.php',
-                    'Actividades' => 'servicios.php',
-                    'Asistentes' => 'contacto.php',
-                    'Traslados' => 'contacto.php'
-                ];
-
-                // Generar los enlaces de navegación
-                foreach ($navItems as $nombre => $url) {
-                    echo "<li><a href='$url'>$nombre</a></li>";
-                }
-                ?>
+    <nav class="nav">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/acerca">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacto">Contacto</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </div>
+    
+</nav>
+        <div class="card">
+  <img src="https://www.ipe.org.pe/portal/wp-content/uploads/2020/07/Huanuco_economia.jpg" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card" aria-hidden="true">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title placeholder-glow">
+      <span class="placeholder col-6"></span>
+    </h5>
+    <p class="card-text placeholder-glow">
+      <span class="placeholder col-7"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-6"></span>
+      <span class="placeholder col-8"></span>
+    </p>
+    <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+  </div>
+</div>
     </body>
 </html>
