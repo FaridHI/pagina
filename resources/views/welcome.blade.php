@@ -30,12 +30,12 @@
             margin: 0;
             padding: 0;
             background-color: #333;
-            /*text-align: center; /* Centra el texto en la barra de navegación */
+            text-align: center; /* Centra el texto en la barra de navegación */
         }
 
         nav li {
             display: inline; /* Muestra los elementos en línea */
-            margin: 0 10px; /* Espaciado entre elementos de navegación */
+            margin: 0 20px; /* Espaciado entre elementos de navegación */
         }
 
         nav a {
@@ -60,9 +60,14 @@
                 // Arreglo de elementos de navegación
                 $navItems = [
                     'Inicio' => 'index.php',
-                    'Acerca de' => 'acerca.php',
-                    'Servicios' => 'servicios.php',
-                    'Contacto' => 'contacto.php'
+                    'Alojamientos' => 'acerca.php',
+                    'Vuelos' => 'servicios.php',
+                    'Paquetes' => 'contacto.php',
+                    'Ofertas' => 'ga.php',
+                    'Rentas' => 'acerca.php',
+                    'Actividades' => 'servicios.php',
+                    'Asistentes' => 'contacto.php',
+                    'Traslados' => 'contacto.php'
                 ];
 
                 // Generar los enlaces de navegación
